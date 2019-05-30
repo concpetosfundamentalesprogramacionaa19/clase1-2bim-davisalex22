@@ -10,27 +10,16 @@ import java.util.Scanner;
 
 /**
  *
- * @author reroes
+ * @author Usuario iTC
  */
-public class Ejemplo2 {
-
+public class DemoRandomico {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         Random aleatorios = new Random();
-        int[] datos = new int[5];
-        for(int i = 0; i<=1000; i++){
-            int v = aleatorios.nextInt(5);
-            System.out.println(v);
-            datos[v] = datos[v]+1;
-        }
         
-        System.out.println("Resultados");
-        for (int i = 0; i < datos.length; i++) {
-            System.out.printf("posición: %d - %d\n", i, datos[i]);
-        }
-                
-        
-
-    }
+        int v = aleatorios.nextInt(4);
+        System.out.printf("%d\n",v);
+    
+}
 }
